@@ -1,101 +1,87 @@
-# Just-Geeky-News (MVC)
+# Just-Geeky-News
 
+A CMS-style tech news app where users can create accounts, publish posts, upvote content, and comment on discussions.
 
-This application and website is used for creating and sharing blog posts centered around a technology social site. Allows users to view, edit and delete their posts and view and comment on the posts of others. Utilizes Node.js and Express.js to create and manage a server for a blog post sharing webiste.
+## Tech Stack
 
-________________________________________________________________________________________________________________________________________________________________
+![JavaScript](https://img.shields.io/badge/JavaScript-87.4%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
+![Handlebars](https://img.shields.io/badge/Handlebars-8.3%25-f0772b?style=for-the-badge&logo=handlebarsdotjs&logoColor=fff)
+![CSS](https://img.shields.io/badge/CSS-4.3%25-1572B6?style=for-the-badge&logo=css3&logoColor=fff)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=fff)
+![Express.js](https://img.shields.io/badge/Express.js-Framework-000000?style=for-the-badge&logo=express&logoColor=fff)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=fff)
+![Sequelize](https://img.shields.io/badge/Sequelize-ORM-52B0E7?style=for-the-badge&logo=sequelize&logoColor=fff)
+![Heroku](https://img.shields.io/badge/Heroku-Deploy-430098?style=for-the-badge&logo=heroku&logoColor=fff)
 
-###LINK
+## Live Demo
+
 https://protected-lowlands-09239.herokuapp.com/login
 
-_________________________________________________________________________________________________________________________________________________________________
+## Screenshot
 
+![Just-Geeky-News Screenshot](https://karltunmoreno.github.io/My-Portfolio/assets/images/Justgeekynewspic1.jpg)
 
- ![Ss](https://karltunmoreno.github.io/My-Portfolio/assets/images/Justgeekynewspic1.jpg)
- _________________________________________________________________________________________________________________________________________________________________
+## Features
 
+- View tech news posts in a feed
+- Create an account and log in
+- Stay logged in with session support
+- Create, edit, and delete your own posts
+- Comment on posts
+- Upvote posts
+- View your content from a personal dashboard
 
+## Installation
 
- ### NPM Packages:
+1. Clone the repository.
+2. Install dependencies:
 
- - **express**: High performance framework for server-side applications
- - **express-session** and **express-session-sequelize**: For session creation and to connect/sync the sequelize database to the session.
- - **mysql2 and sequelize**: To connect the application to a MySQL database and to query that database within JavaScript rather than the MySQL command-line shell.
- - **dotenv**: For setting environment variables.
- - **bcrypt**: For password hashing.
- - **express-handlebars**: For serving dynamic HTML based on database queries.
+```bash
+npm install
+```
 
- ___________________________________________________________________________________________________________________________________________________________________
+3. Start the development server:
 
- TECH USED:
+```bash
+npm start
+```
 
- ![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=flat-square&logo=javascript&logoColor=000000&color=d1b01f)
+4. Open the app locally at:
 
- #### Back-end:
-  ![Node.js ](https://img.shields.io/badge/node.js-6DA55F?logo=node.js&logoColor=white&style=for-the-badge)
- ![Heroku](https://img.shields.io/badge/-Heroku-430098?style=flat-square&logo=heroku&logoColor=ffffff)
-   ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?logo=mysql&logoColor=white&style=for-the-badge)
-   ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB&style=for-the-badge)
+`http://localhost:3001/home`
 
- __________________________________________________________________________________________________________________________________________________________________
+## Core Packages
 
- ## Installation Instructions
+- **express**
+- **express-session**
+- **express-session-sequelize**
+- **mysql2**
+- **sequelize**
+- **dotenv**
+- **bcrypt**
+- **express-handlebars**
 
-     npm install
+## Project Objective
 
- ### After this repository is cloned, open your command-line in this repository's root directory to install the required dependencies denoted in the package.JSON file.
+This project demonstrates:
 
-     npm start
+- Express middleware and route protection
+- MVC architecture organization
+- Dynamic views with Handlebars templates
+- Session-based authentication
+- CRUD operations for post management
 
- ### This will start the server on port 3001 for individual testing purposes. Navigate to localhost:3001/home to test the application out.
+## User Stories
 
-     ctrl+C
-
- ### Use this command to kill the server at any time.
-
- ## Usage Comments
-
- Used  HTML routes to render using handlebars. Built a CMS-style (Technology Blog).
- On the same note, used MVC for architectural structure! 
- 
-###OBJECTIVE
-
-Write middleware functions for Express.js.
-
-Use middleware to restrict access to certain routes.
-
-Organized a codebase following the MVC paradigm.
-
-Created templates with Handlebars.js to reduce the amount of front-end JavaScript needed.
-
-Implemented built-in and custom helpers in Handlebars.js to help with formatting.
-
-Store and use data saved on a back-end session.
-
-##User Stories:
-
-  * As a user, I can view all news articles in a list.
-
-  * As a user, I can see how many upvotes and comments each article has.
-
-  * As a user, I can click on the comment count to route to a different page.
-
-  * As a user, I can visit a login page to create a new account or log into an existing account.
-
-  * As a user, I want to stay logged in even if I refresh the page or close the browser tab.
-
-  * As a user, I can click a "logout" button for the app to forget me.
-
-  * As a user, I can view an article's details on a separate page.
-
-  * As a logged-in user, I can add a comment to an article.
-
-  * As a logged-in user, I can upvote an article.
-
-  * As a logged-in user, I can view all of my posted articles on a separate dashboard page.
-
-  * As a logged-in user, I can create new article posts via the dashboard.
-
-  * As a logged-in user, I can edit or delete my existing articles via the dashboard.
-
-
+- As a user, I can view all news articles in a list.
+- As a user, I can see how many upvotes and comments each article has.
+- As a user, I can click on the comment count to route to a different page.
+- As a user, I can visit a login page to create a new account or log into an existing account.
+- As a user, I want to stay logged in even if I refresh the page or close the browser tab.
+- As a user, I can click a logout button for the app to forget me.
+- As a user, I can view an article's details on a separate page.
+- As a logged-in user, I can add a comment to an article.
+- As a logged-in user, I can upvote an article.
+- As a logged-in user, I can view all of my posted articles on a separate dashboard page.
+- As a logged-in user, I can create new article posts via the dashboard.
+- As a logged-in user, I can edit or delete my existing articles via the dashboard.
