@@ -24,7 +24,7 @@ https://protected-lowlands-09239.herokuapp.com/login
 ![App Screenshot](Just-Geeky-News.png)
 
 
-![Just-Geeky-News Screenshot](https://karltunmoreno.github.io/My-Portfolio/assets/images/Justgeekynewspic1.jpg)
+
 
 ## Features
 
